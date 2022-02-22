@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CalicoCPU simulator</title>
+<link href="simulator.css" rel="stylesheet">
+<script src="simulator.js"></script>
+</head>
+<body>
+<h1>CalicoCPU simulator</h1>
+
+<div class="board-area">
+<!-- ROMボード -->
+<div class="board" style="left: 0px; top: 0px; width: 300px; height: 300px; font-size: 20px;">
+<textarea id="rom-data" style="position: absolute; left: 10px; top: 10px; width: 250px; height: 200px;"></textarea>
+
+<div style="left: 180px; top: 230px;">-bit</div>
+<div style="left: 185px; top: 260px;">address</div>
+<form id="addr-select" action="http://999.999.999.999/" onsubmit="return false;">
+<div style="left: 10px; top: 230px;">
+<input type="radio" name="format" value="1" id="addr-1"><label for="addr-1">1</label>
+</div><div style="left: 50px; top: 230px;">
+<input type="radio" name="format" value="2" id="addr-2"><label for="addr-2">2</label>
+</div><div style="left: 90px; top: 230px;">
+<input type="radio" name="format" value="3" id="addr-3"><label for="addr-3">3</label>
+</div><div style="left: 130px; top: 230px;">
+<input type="radio" name="format" value="4" id="addr-4"><label for="addr-4">4</label>
+</div><div style="left: 10px; top: 260px;">
+<input type="radio" name="format" value="5" id="addr-5"><label for="addr-5">5</label>
+</div><div style="left: 50px; top: 260px;">
+<input type="radio" name="format" value="6" id="addr-6"><label for="addr-6">6</label>
+</div><div style="left: 90px; top: 260px;">
+<input type="radio" name="format" value="7" id="addr-7"><label for="addr-7">7</label>
+</div><div style="left: 130px; top: 260px;">
+<input type="radio" name="format" value="8" id="addr-8" checked="checked"><label for="addr-8">8</label>
+</div>
+</form>
+</div>
+<!-- ROM端子 -->
+<div class="connector" style="left: 280px; top: 150px; width: 70px; height: 120px;"></div>
+
+<!-- クロック/リセットボード -->
+<div class="board" style="left: 0px; top: 310px; width: 300px; height: 200px; font-size: 20px;">
+<div style="left: 100px; top: 20px; width: 160px; height: 80px; background: rgb(180, 180, 180); color: rgb(32, 32, 32); font-size: 30px; font-family: monospace;">
+<div id="freq" style="right: 10px; top: 5px; text-align: right;">1Hz</div>
+<div id="clock-count" style="right: 10px; top: 40px; text-align: right;">000000</div>
+<span id="is-running" class="run-status" data-running="0">
+<div style="left: 20px; top: 35px;" class="running"><svg width="20" height="20" viewbox="0 0 20 20">
+<desc>play</desc>
+<polygon points="0,0 20,10 0,20" fill="rgb(32, 32, 32)" />
+</svg></div>
+<div style="left: 20px; top: 35px;" class="paused"><svg width="20" height="20" viewbox="0 0 20 20">
+<desc>pause</desc>
+<g fill="rgb(32, 32, 32)">
+<rect x="1" y="0" width="6" height="20" />
+<rect x="13" y="0" width="6" height="20" />
+</g>
+</svg></div>
+</span>
+</div>
+
+<div style="text-align: right; left: 0px; top: 25px; width: 30px;">▲</div>
+<div id="up" class="pushsw" style="left: 40px; top: 20px; font-size: 24px; color: rgb(240, 240, 240);">●</div>
+
+<div style="text-align: right; left: 0px; top: 75px; width: 30px;">▼</div>
+<div id="down" class="pushsw" style="left: 40px; top: 70px; font-size: 24px; color: rgb(240, 240, 240);">●</div>
+
+<div id="run-pause" class="pushsw" style="left: 40px; top: 120px; font-size: 24px; color: rgb(80, 240, 80);">●</div>
+<div style="text-align: center; left: 20px; top: 160px; width: 80px;"><svg width="16" height="16" viewbox="0 0 16 16">
+<desc>play</desc>
+<polygon points="0,0 16,8 0,16" fill="rgb(240, 240, 240)" />
+</svg>/<svg width="16" height="16" viewbox="0 0 16 16">
+<desc>pause</desc>
+<g fill="rgb(240, 240, 240)">
+<rect x="1" y="0" width="5" height="16" />
+<rect x="10" y="0" width="5" height="16" />
+</g>
+</svg></div>
+<div id="step" class="pushsw" style="left: 120px; top: 120px; font-size: 24px; color: rgb(220, 220, 80);">●</div>
+<div style="text-align: center; left: 100px; top: 160px; width: 80px;">STEP</div>
+<div id="reset" class="pushsw" style="left: 200px; top: 120px; font-size: 24px; color: rgb(240, 80, 80);">●</div>
+<div style="text-align: center; left: 180px; top: 160px; width: 80px;">RESET</div>
+</div>
+<!-- クロック/リセット端子 -->
+<div class="connector" style="left: 280px; top: 340px; width: 70px; height: 60px;"></div>
+
+<!-- メインボード -->
+<div class="board" style="left: 310px; top: 0px; width: 610px; height: 510px;">
+<span style="font-size: 30px;">
+<div style="left: 120px; top: 40px;">PC</div>
+<div style="left: 200px; top: 40px; color: rgb(0, 240, 0);" id="pc" class="led" data-value="0"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+<div style="left: 120px; top: 80px;">inst</div>
+<div style="left: 200px; top: 80px; color: rgb(0, 240, 0);" id="inst" class="led" data-value="0"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+
+<div style="left: 150px; top: 160px;">A</div>
+<div style="left: 200px; top: 160px; color: rgb(240, 0, 0);" id="reg0" class="led" data-value="0"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+<div style="left: 150px; top: 220px;">B</div>
+<div style="left: 200px; top: 220px; color: rgb(240, 0, 0);" id="reg1" class="led" data-value="0"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+<div style="left: 150px; top: 280px;">C</div>
+<div style="left: 200px; top: 280px; color: rgb(240, 0, 0);" id="reg2" class="led" data-value="0"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+<div style="left: 150px; top: 340px;">D</div>
+<div style="left: 200px; top: 340px; color: rgb(240, 0, 0);" id="reg3" class="led" data-value="0"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+</span>
+<span style="font-size: 20px;">
+<div style="left: 205px; top: 125px; font-size: 20px;">7</div>
+<div style="left: 435px; top: 125px; font-size: 20px;">0</div>
+
+<div style="left: 20px; top: 120px;">ROM</div>
+<div style="left: 20px; top: 410px;">CLOCK</div>
+<div style="right: 20px; top: 200px; text-align: right;">PORT0</div>
+<div style="right: 20px; top: 390px; text-align: right;">PORT1</div>
+</div>
+
+<!-- PORT0ボード -->
+<div class="board" style="left: 930px; top: 170px; width: 300px; height: 130px; font-size: 25px;">
+<div style="left: 25px; top: 20px; font-size: 20px;">7</div>
+<div style="right: 15px; top: 20px; font-size: 20px;">0</div>
+<div style="left: 50px; top: 20px; color: rgb(240, 0, 0);" id="port0" class="led led2" data-value="0" data-on="0"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+<div style="left: 50px; top: 60px;" class="switch" id="portin0" data-value="0"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<!-- PORT0端子 -->
+<div class="connector" style="left: 880px; top: 230px; width: 70px; height: 60px;"></div>
+
+<!-- PORT1ボード -->
+<div class="board" style="left: 930px; top: 310px; width: 300px; height: 130px; font-size: 25px;">
+<div style="left: 25px; top: 90px; font-size: 20px;">7</div>
+<div style="right: 15px; top: 90px; font-size: 20px;">0</div>
+<div style="left: 50px; top: 20px; color: rgb(240, 0, 0);" id="port1" class="led led2" data-value="0" data-on="0"><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span><span>●</span></div>
+<div style="left: 50px; top: 60px;" class="switch" id="portin1" data-value="0"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</div>
+<!-- PORT1端子 -->
+<div class="connector" style="left: 880px; top: 320px; width: 70px; height: 60px;"></div>
+
+</div>
+
+</body>
+</html>

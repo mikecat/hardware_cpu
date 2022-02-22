@@ -1,0 +1,473 @@
+div.board-area {
+	position: relative;
+}
+
+div.board-area div {
+	position: absolute;
+}
+
+div.board {
+	background: rgb(0, 96, 32);
+	color: rgb(240, 240, 240);
+	white-space: nowrap;
+}
+
+div.connector {
+	background: rgb(64, 64, 64);
+	z-index: 1;
+}
+
+div.pushsw {
+	text-align: center;
+	background-color: rgb(160, 160, 160);
+	padding: 3px 8px;
+	cursor: pointer;
+}
+
+/* 実行中/停止中表示 */
+
+.run-status[data-running="0"] > .running {
+	display: none;
+}
+.run-status:not([data-running="0"]) > :not(.running) {
+	display: none;
+}
+
+/* LED中央の区切り */
+
+div.led :nth-child(5) {
+	margin-left: 0.5em;
+}
+
+/* LED消灯時の色 */
+
+div.led * {
+	color: rgb(160, 160, 160);
+}
+
+/* 2色LEDの色選択が0の時の色 */
+
+div.led2 * {
+	color: rgb(64, 64, 240);
+	position: relative;
+}
+
+/* 2色LED消灯時の色 */
+
+div.led2 :after {
+	content: "●";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: rgb(160, 160, 160);
+}
+
+/* 上の桁 */
+
+div.led[data-value^="1"]:not([data-value="1"]) :nth-child(4) {
+	color: inherit;
+}
+
+div.led[data-value^="2"]:not([data-value="2"]) :nth-child(3) {
+	color: inherit;
+}
+
+div.led[data-value^="3"]:not([data-value="3"]) :nth-child(n+3):nth-child(-n+4) {
+	color: inherit;
+}
+
+div.led[data-value^="4"]:not([data-value="4"]) :nth-child(2) {
+	color: inherit;
+}
+
+div.led[data-value^="5"]:not([data-value="5"]) :nth-child(2n+2):nth-child(-n+4) {
+	color: inherit;
+}
+
+div.led[data-value^="6"]:not([data-value="6"]) :nth-child(n+2):nth-child(-n+3) {
+	color: inherit;
+}
+
+div.led[data-value^="7"]:not([data-value="7"]) :nth-child(n+2):nth-child(-n+4) {
+	color: inherit;
+}
+
+div.led[data-value^="8"]:not([data-value="8"]) :nth-child(1) {
+	color: inherit;
+}
+
+div.led[data-value^="9"]:not([data-value="9"]) :nth-child(3n+1):nth-child(-n+4) {
+	color: inherit;
+}
+
+div.led[data-value^="a" i]:not([data-value="a" i]) :nth-child(2n+1):nth-child(-n+3) {
+	color: inherit;
+}
+
+div.led[data-value^="b" i]:not([data-value="b" i]) :nth-child(-n+4):not(:nth-child(2)) {
+	color: inherit;
+}
+
+div.led[data-value^="c" i]:not([data-value="c" i]) :nth-child(-n+2) {
+	color: inherit;
+}
+
+div.led[data-value^="d" i]:not([data-value="d" i]) :nth-child(-n+4):not(:nth-child(3)) {
+	color: inherit;
+}
+
+div.led[data-value^="e" i]:not([data-value="e" i]) :nth-child(-n+3) {
+	color: inherit;
+}
+
+div.led[data-value^="f" i]:not([data-value="f" i]) :nth-child(-n+4) {
+	color: inherit;
+}
+
+/* 下の桁 */
+
+div.led[data-value$="1"] :nth-child(8) {
+	color: inherit;
+}
+
+div.led[data-value$="2"] :nth-child(7) {
+	color: inherit;
+}
+
+div.led[data-value$="3"] :nth-child(n+7) {
+	color: inherit;
+}
+
+div.led[data-value$="4"] :nth-child(6) {
+	color: inherit;
+}
+
+div.led[data-value$="5"] :nth-child(2n+6) {
+	color: inherit;
+}
+
+div.led[data-value$="6"] :nth-child(n+6):nth-child(-n+7) {
+	color: inherit;
+}
+
+div.led[data-value$="7"] :nth-child(n+6) {
+	color: inherit;
+}
+
+div.led[data-value$="8"] :nth-child(5) {
+	color: inherit;
+}
+
+div.led[data-value$="9"] :nth-child(3n+5) {
+	color: inherit;
+}
+
+div.led[data-value$="a" i] :nth-child(2n+5) {
+	color: inherit;
+}
+
+div.led[data-value$="b" i] :nth-child(n+5):not(:nth-child(6)) {
+	color: inherit;
+}
+
+div.led[data-value$="c" i] :nth-child(n+5):nth-child(-n+6) {
+	color: inherit;
+}
+
+div.led[data-value$="d" i] :nth-child(n+5):not(:nth-child(7)) {
+	color: inherit;
+}
+
+div.led[data-value$="e" i] :nth-child(n+5):nth-child(-n+7) {
+	color: inherit;
+}
+
+div.led[data-value$="f" i] :nth-child(n+5) {
+	color: inherit;
+}
+
+/* 2色LEDの上の桁 */
+
+div.led2[data-on^="1"]:not([data-on="1"]) :nth-child(4):after {
+	display: none;
+}
+
+div.led2[data-on^="2"]:not([data-on="2"]) :nth-child(3):after {
+	display: none;
+}
+
+div.led2[data-on^="3"]:not([data-on="3"]) :nth-child(n+3):nth-child(-n+4):after {
+	display: none;
+}
+
+div.led2[data-on^="4"]:not([data-on="4"]) :nth-child(2):after {
+	display: none;
+}
+
+div.led2[data-on^="5"]:not([data-on="5"]) :nth-child(2n+2):nth-child(-n+4):after {
+	display: none;
+}
+
+div.led2[data-on^="6"]:not([data-on="6"]) :nth-child(n+2):nth-child(-n+3):after {
+	display: none;
+}
+
+div.led2[data-on^="7"]:not([data-on="7"]) :nth-child(n+2):nth-child(-n+4):after {
+	display: none;
+}
+
+div.led2[data-on^="8"]:not([data-on="8"]) :nth-child(1):after {
+	display: none;
+}
+
+div.led2[data-on^="9"]:not([data-on="9"]) :nth-child(3n+1):nth-child(-n+4):after {
+	display: none;
+}
+
+div.led2[data-on^="a" i]:not([data-on="a" i]) :nth-child(2n+1):nth-child(-n+3):after {
+	display: none;
+}
+
+div.led2[data-on^="b" i]:not([data-on="b" i]) :nth-child(-n+4):not(:nth-child(2)):after {
+	display: none;
+}
+
+div.led2[data-on^="c" i]:not([data-on="c" i]) :nth-child(-n+2):after {
+	display: none;
+}
+
+div.led2[data-on^="d" i]:not([data-on="d" i]) :nth-child(-n+4):not(:nth-child(3)):after {
+	display: none;
+}
+
+div.led2[data-on^="e" i]:not([data-on="e" i]) :nth-child(-n+3):after {
+	display: none;
+}
+
+div.led2[data-on^="f" i]:not([data-on="f" i]) :nth-child(-n+4):after {
+	display: none;
+}
+
+/* 2色LEDの下の桁 */
+
+div.led2[data-on$="1"] :nth-child(8):after {
+	display: none;
+}
+
+div.led2[data-on$="2"] :nth-child(7):after {
+	display: none;
+}
+
+div.led2[data-on$="3"] :nth-child(n+7):after {
+	display: none;
+}
+
+div.led2[data-on$="4"] :nth-child(6):after {
+	display: none;
+}
+
+div.led2[data-on$="5"] :nth-child(2n+6):after {
+	display: none;
+}
+
+div.led2[data-on$="6"] :nth-child(n+6):nth-child(-n+7):after {
+	display: none;
+}
+
+div.led2[data-on$="7"] :nth-child(n+6):after {
+	display: none;
+}
+
+div.led2[data-on$="8"] :nth-child(5):after {
+	display: none;
+}
+
+div.led2[data-on$="9"] :nth-child(3n+5):after {
+	display: none;
+}
+
+div.led2[data-on$="a" i] :nth-child(2n+5):after {
+	display: none;
+}
+
+div.led2[data-on$="b" i] :nth-child(n+5):not(:nth-child(6)):after {
+	display: none;
+}
+
+div.led2[data-on$="c" i] :nth-child(n+5):nth-child(-n+6):after {
+	display: none;
+}
+
+div.led2[data-on$="d" i] :nth-child(n+5):not(:nth-child(7)):after {
+	display: none;
+}
+
+div.led2[data-on$="e" i] :nth-child(n+5):nth-child(-n+7):after {
+	display: none;
+}
+
+div.led2[data-on$="f" i] :nth-child(n+5):after {
+	display: none;
+}
+
+/* スライドスイッチ */
+
+div.switch * {
+	display: inline-block;
+	width: 0.8em;
+	height: 2em;
+	margin: auto 0.1em;
+	background: rgb(180, 140, 0); /* 枠 */
+	position: relative;
+	cursor: pointer;
+}
+
+div.switch :before {
+	content: "";
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	background: rgb(128, 128, 128); /* つまみが動く部分の背景 */
+}
+
+div.switch :after {
+	content: "";
+	width: 80%;
+	height: 30%;
+	position: absolute;
+	left: 10%;
+	top: 60%;
+	background: rgb(32, 32, 32); /* つまみ */
+}
+
+/* スライドスイッチ中央の区切り */
+
+div.switch :nth-child(5) {
+	margin-left: 0.6em;
+}
+
+/* スライドスイッチの上の桁 */
+
+div.switch[data-value^="1"]:not([data-value="1"]) :nth-child(4):after {
+	top: 10%;
+}
+
+div.switch[data-value^="2"]:not([data-value="2"]) :nth-child(3):after {
+	top: 10%;
+}
+
+div.switch[data-value^="3"]:not([data-value="3"]) :nth-child(n+3):nth-child(-n+4):after {
+	top: 10%;
+}
+
+div.switch[data-value^="4"]:not([data-value="4"]) :nth-child(2):after {
+	top: 10%;
+}
+
+div.switch[data-value^="5"]:not([data-value="5"]) :nth-child(2n+2):nth-child(-n+4):after {
+	top: 10%;
+}
+
+div.switch[data-value^="6"]:not([data-value="6"]) :nth-child(n+2):nth-child(-n+3):after {
+	top: 10%;
+}
+
+div.switch[data-value^="7"]:not([data-value="7"]) :nth-child(n+2):nth-child(-n+4):after {
+	top: 10%;
+}
+
+div.switch[data-value^="8"]:not([data-value="8"]) :nth-child(1):after {
+	top: 10%;
+}
+
+div.switch[data-value^="9"]:not([data-value="9"]) :nth-child(3n+1):nth-child(-n+4):after {
+	top: 10%;
+}
+
+div.switch[data-value^="a" i]:not([data-value="a" i]) :nth-child(2n+1):nth-child(-n+3):after {
+	top: 10%;
+}
+
+div.switch[data-value^="b" i]:not([data-value="b" i]) :nth-child(-n+4):not(:nth-child(2)):after {
+	top: 10%;
+}
+
+div.switch[data-value^="c" i]:not([data-value="c" i]) :nth-child(-n+2):after {
+	top: 10%;
+}
+
+div.switch[data-value^="d" i]:not([data-value="d" i]) :nth-child(-n+4):not(:nth-child(3)):after {
+	top: 10%;
+}
+
+div.switch[data-value^="e" i]:not([data-value="e" i]) :nth-child(-n+3):after {
+	top: 10%;
+}
+
+div.switch[data-value^="f" i]:not([data-value="f" i]) :nth-child(-n+4):after {
+	top: 10%;
+}
+
+/* スライドスイッチの下の桁 */
+
+div.switch[data-value$="1"] :nth-child(8):after {
+	top: 10%;
+}
+
+div.switch[data-value$="2"] :nth-child(7):after {
+	top: 10%;
+}
+
+div.switch[data-value$="3"] :nth-child(n+7):after {
+	top: 10%;
+}
+
+div.switch[data-value$="4"] :nth-child(6):after {
+	top: 10%;
+}
+
+div.switch[data-value$="5"] :nth-child(2n+6):after {
+	top: 10%;
+}
+
+div.switch[data-value$="6"] :nth-child(n+6):nth-child(-n+7):after {
+	top: 10%;
+}
+
+div.switch[data-value$="7"] :nth-child(n+6):after {
+	top: 10%;
+}
+
+div.switch[data-value$="8"] :nth-child(5):after {
+	top: 10%;
+}
+
+div.switch[data-value$="9"] :nth-child(3n+5):after {
+	top: 10%;
+}
+
+div.switch[data-value$="a" i] :nth-child(2n+5):after {
+	top: 10%;
+}
+
+div.switch[data-value$="b" i] :nth-child(n+5):not(:nth-child(6)):after {
+	top: 10%;
+}
+
+div.switch[data-value$="c" i] :nth-child(n+5):nth-child(-n+6):after {
+	top: 10%;
+}
+
+div.switch[data-value$="d" i] :nth-child(n+5):not(:nth-child(7)):after {
+	top: 10%;
+}
+
+div.switch[data-value$="e" i] :nth-child(n+5):nth-child(-n+7):after {
+	top: 10%;
+}
+
+div.switch[data-value$="f" i] :nth-child(n+5):after {
+	top: 10%;
+}
