@@ -889,16 +889,16 @@
     (path "/54212c01-b363-47b8-a145-45c40df316f4/284b983b-89db-4419-a716-515bc9fbf142"
       (reference "SW1") (unit 1) (value "SW_DIP_x04") (footprint "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm")
     )
-    (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/d19ca699-addd-4426-af5f-88ae55dfc803"
+    (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/edfccd7f-d524-4896-bec3-db71104d970d"
       (reference "U1") (unit 1) (value "74HC161") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
     )
-    (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/c3edbd7f-3ea8-48dc-90de-41717f35d963"
+    (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/d19ca699-addd-4426-af5f-88ae55dfc803"
       (reference "U2") (unit 1) (value "74HC161") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
     )
-    (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/cc06a8fd-d7db-479d-8cb3-a9fdf79c89a7"
+    (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/c3edbd7f-3ea8-48dc-90de-41717f35d963"
       (reference "U3") (unit 1) (value "74HC161") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
     )
-    (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/edfccd7f-d524-4896-bec3-db71104d970d"
+    (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/cc06a8fd-d7db-479d-8cb3-a9fdf79c89a7"
       (reference "U4") (unit 1) (value "74HC161") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/36fadf59-89b7-4f12-89ed-0931091853b4"
