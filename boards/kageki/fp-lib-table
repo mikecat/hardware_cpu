@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "PrjLibrary_CalicoCPU")(type "KiCad")(uri "D:/MyData/Documents/cpu_zisaku/hardware_cpu/boards/calico_cpu/PrjLibrary.pretty")(options "")(descr ""))
+)
