@@ -39,6 +39,7 @@
 
   (setup
     (pad_to_mask_clearance 0)
+    (aux_axis_origin 159.385 52.705)
     (pcbplotparams
       (layerselection 0x00010fc_ffffffff)
       (disableapertmacros false)
@@ -1242,7 +1243,7 @@
   (dimension (type aligned) (layer "Edge.Cuts") (tstamp 4e1811c5-0e10-4d57-80e0-823f14b0ad5a)
     (pts (xy 158.75 52.705) (xy 158.75 113.03))
     (height 1.27)
-    (gr_text "60.3250 mm" (at 155.68 82.8675 90) (layer "Edge.Cuts") (tstamp 1f8f536e-7f83-43a2-a891-e9593df2b1ee)
+    (gr_text "60.3250 mm" (at 155.68 82.8675 90) (layer "Edge.Cuts") (tstamp 4e1811c5-0e10-4d57-80e0-823f14b0ad5a)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
     )
     (format (units 3) (units_format 1) (precision 4))
@@ -1251,7 +1252,7 @@
   (dimension (type aligned) (layer "Edge.Cuts") (tstamp f9fc766a-edf9-41d9-b548-6ef776f69470)
     (pts (xy 159.385 52.07) (xy 203.2 52.07))
     (height -1.27)
-    (gr_text "43.8150 mm" (at 181.2925 49.65) (layer "Edge.Cuts") (tstamp e2741238-d2d1-41a1-b6b7-d357e6612949)
+    (gr_text "43.8150 mm" (at 181.2925 49.65) (layer "Edge.Cuts") (tstamp f9fc766a-edf9-41d9-b548-6ef776f69470)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 3) (units_format 1) (precision 4))
