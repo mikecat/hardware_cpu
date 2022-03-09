@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name "PrjLibrary")(type "KiCad")(uri "${KIPRJMOD}/PrjLibrary.pretty")(options "")(descr ""))
-  (lib (name "PrjLibrary_MainBoard")(type "KiCad")(uri "${KIPRJMOD}/../calico_cpu/PrjLibrary.pretty")(options "")(descr ""))
+  (lib (name "ModifiedKiCadLibrary")(type "KiCad")(uri "${KIPRJMOD}/../_libraries/ModifiedKiCadLibrary.pretty")(options "")(descr ""))
+  (lib (name "MyLibrary")(type "KiCad")(uri "${KIPRJMOD}/../_libraries/MyLibrary.pretty")(options "")(descr ""))
 )

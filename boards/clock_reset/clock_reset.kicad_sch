@@ -1751,7 +1751,7 @@
     (property "Value" "AQM0802A" (id 1) (at 231.14 41.9099 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "PrjLibrary:AQM0802A-RN-GBW" (id 2) (at 224.79 40.64 0)
+    (property "Footprint" "MyLibrary:AQM0802A-RN-GBW" (id 2) (at 224.79 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 224.79 40.64 0)
@@ -2339,7 +2339,7 @@
     (uuid a90ad1b0-dd95-4cee-a717-3441df9bf56b)
     (property "Reference" "U1" (id 0) (at 121.92 77.47 0))
     (property "Value" "ATmega328P-P" (id 1) (at 121.92 80.01 0))
-    (property "Footprint" "PrjLibrary:DIP-28_W7.62mm-D1mm" (id 2) (at 143.51 114.3 0)
+    (property "Footprint" "ModifiedKiCadLibrary:DIP-28_W7.62mm-D1mm" (id 2) (at 143.51 114.3 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" (id 3) (at 143.51 114.3 0)
@@ -2559,7 +2559,7 @@
     (uuid d4f5f029-652f-436a-bb2c-81630291cef1)
     (property "Reference" "J1" (id 0) (at 40.64 153.67 0))
     (property "Value" "USB-MicroB-power" (id 1) (at 40.64 156.21 0))
-    (property "Footprint" "PrjLibrary:USB-MicroB-power" (id 2) (at 40.64 163.83 0)
+    (property "Footprint" "MyLibrary:USB-MicroB-power" (id 2) (at 40.64 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 40.64 163.83 0)
@@ -2826,7 +2826,7 @@
       (reference "D2") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/d4f5f029-652f-436a-bb2c-81630291cef1"
-      (reference "J1") (unit 1) (value "USB-MicroB-power") (footprint "PrjLibrary:USB-MicroB-power")
+      (reference "J1") (unit 1) (value "USB-MicroB-power") (footprint "MyLibrary:USB-MicroB-power")
     )
     (path "/d46bba56-20eb-472a-859a-6f1cbbf3a02d"
       (reference "J2") (unit 1) (value "signal_out") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
@@ -2886,10 +2886,10 @@
       (reference "SW5") (unit 1) (value "white") (footprint "Button_Switch_THT:SW_PUSH_6mm_H7.3mm")
     )
     (path "/a90ad1b0-dd95-4cee-a717-3441df9bf56b"
-      (reference "U1") (unit 1) (value "ATmega328P-P") (footprint "PrjLibrary:DIP-28_W7.62mm-D1mm")
+      (reference "U1") (unit 1) (value "ATmega328P-P") (footprint "ModifiedKiCadLibrary:DIP-28_W7.62mm-D1mm")
     )
     (path "/0741ddd4-c1d6-44e7-9c69-2d2ac1c4abcb"
-      (reference "U2") (unit 1) (value "AQM0802A") (footprint "PrjLibrary:AQM0802A-RN-GBW")
+      (reference "U2") (unit 1) (value "AQM0802A") (footprint "MyLibrary:AQM0802A-RN-GBW")
     )
     (path "/ffe15c22-6549-4880-ae32-c2e96a1323c9"
       (reference "Y1") (unit 1) (value "16MHz") (footprint "Crystal:Crystal_HC49-4H_Vertical")

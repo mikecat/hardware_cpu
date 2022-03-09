@@ -1037,7 +1037,7 @@
     (uuid 41bfbe12-e3f8-4aea-8767-3ff73270eca8)
     (property "Reference" "J1" (id 0) (at 102.87 69.85 0))
     (property "Value" "Conn_02x06_Top_Bottom" (id 1) (at 102.87 72.39 0))
-    (property "Footprint" "PrjLibrary:PinSocket_2x06_P2.54mm_Vertical_Top_Bottom" (id 2) (at 104.14 81.28 0)
+    (property "Footprint" "ModifiedKiCadLibrary:PinSocket_2x06_P2.54mm_Vertical_Top_Bottom" (id 2) (at 104.14 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 104.14 81.28 0)
@@ -1062,7 +1062,7 @@
     (uuid 4f41af0e-af2a-428a-8cd5-08eb643145cb)
     (property "Reference" "SW1" (id 0) (at 165.1 69.85 0))
     (property "Value" "SW_DIP_x08" (id 1) (at 165.1 72.39 0))
-    (property "Footprint" "PrjLibrary:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm_short" (id 2) (at 165.1 87.63 0)
+    (property "Footprint" "ModifiedKiCadLibrary:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm_short" (id 2) (at 165.1 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 165.1 87.63 0)
@@ -1291,7 +1291,7 @@
       (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
     )
     (path "/41bfbe12-e3f8-4aea-8767-3ff73270eca8"
-      (reference "J1") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "PrjLibrary:PinSocket_2x06_P2.54mm_Vertical_Top_Bottom")
+      (reference "J1") (unit 1) (value "Conn_02x06_Top_Bottom") (footprint "ModifiedKiCadLibrary:PinSocket_2x06_P2.54mm_Vertical_Top_Bottom")
     )
     (path "/bec20459-b20b-4ddc-a042-24a4102341b9"
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
@@ -1318,7 +1318,7 @@
       (reference "R8") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/4f41af0e-af2a-428a-8cd5-08eb643145cb"
-      (reference "SW1") (unit 1) (value "SW_DIP_x08") (footprint "PrjLibrary:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm_short")
+      (reference "SW1") (unit 1) (value "SW_DIP_x08") (footprint "ModifiedKiCadLibrary:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm_short")
     )
   )
 )

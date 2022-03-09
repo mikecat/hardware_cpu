@@ -2200,7 +2200,7 @@
     (uuid e7a553dc-6b20-4896-bb62-ac76a417710b)
     (property "Reference" "J1" (id 0) (at 232.41 22.86 0))
     (property "Value" "Conn_02x10_Top_Bottom" (id 1) (at 232.41 25.4 0))
-    (property "Footprint" "PrjLibrary_MainBoard:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom" (id 2) (at 231.14 39.37 0)
+    (property "Footprint" "ModifiedKiCadLibrary:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom" (id 2) (at 231.14 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 231.14 39.37 0)
@@ -2287,7 +2287,7 @@
     (uuid fa74e58b-1d1f-4c19-a9e0-9a5b12093d6c)
     (property "Reference" "U1" (id 0) (at 114.3 78.74 0))
     (property "Value" "ATmega328P-P" (id 1) (at 114.3 81.28 0))
-    (property "Footprint" "PrjLibrary_ClockReset:DIP-28_W7.62mm-D1mm" (id 2) (at 135.89 115.57 0)
+    (property "Footprint" "ModifiedKiCadLibrary:DIP-28_W7.62mm-D1mm" (id 2) (at 135.89 115.57 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" (id 3) (at 135.89 115.57 0)
@@ -2404,7 +2404,7 @@
       (reference "D2") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/e7a553dc-6b20-4896-bb62-ac76a417710b"
-      (reference "J1") (unit 1) (value "Conn_02x10_Top_Bottom") (footprint "PrjLibrary_MainBoard:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom")
+      (reference "J1") (unit 1) (value "Conn_02x10_Top_Bottom") (footprint "ModifiedKiCadLibrary:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom")
     )
     (path "/15f9ce5c-444b-4b49-9e20-44109e09dae0"
       (reference "J2") (unit 1) (value "uart_conn") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
@@ -2434,7 +2434,7 @@
       (reference "SW1") (unit 1) (value "SW_Push") (footprint "Button_Switch_THT:SW_PUSH_6mm_H7.3mm")
     )
     (path "/fa74e58b-1d1f-4c19-a9e0-9a5b12093d6c"
-      (reference "U1") (unit 1) (value "ATmega328P-P") (footprint "PrjLibrary_ClockReset:DIP-28_W7.62mm-D1mm")
+      (reference "U1") (unit 1) (value "ATmega328P-P") (footprint "ModifiedKiCadLibrary:DIP-28_W7.62mm-D1mm")
     )
     (path "/1a6fe569-c5e5-4a21-a4ea-d60011b774d2"
       (reference "Y1") (unit 1) (value "16MHz") (footprint "Crystal:Crystal_HC49-4H_Vertical")

@@ -1914,7 +1914,7 @@
     (property "Value" "addr_high" (id 1) (at 115.57 83.8199 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm" (id 2) (at 104.14 82.55 0)
+    (property "Footprint" "ModifiedKiCadLibrary:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm_3Dfixed" (id 2) (at 104.14 82.55 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 104.14 82.55 0)
@@ -1985,7 +1985,7 @@
     (property "Value" "27C512" (id 1) (at 153.1494 87.63 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-28_W15.24mm" (id 2) (at 151.13 115.57 0)
+    (property "Footprint" "ModifiedKiCadLibrary:DIP-28_W15.24mm_D1mm" (id 2) (at 151.13 115.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0015.pdf" (id 3) (at 151.13 115.57 0)
@@ -2147,7 +2147,7 @@
     (uuid e3f2e52e-4aea-4bbd-9288-ba525c96dd40)
     (property "Reference" "J1" (id 0) (at 236.22 26.67 0))
     (property "Value" "Conn_02x10_Top_Bottom" (id 1) (at 236.22 29.21 0))
-    (property "Footprint" "PrjLibrary_MainBoard:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom" (id 2) (at 234.95 43.18 0)
+    (property "Footprint" "ModifiedKiCadLibrary:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom" (id 2) (at 234.95 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 234.95 43.18 0)
@@ -2230,7 +2230,7 @@
       (reference "C1") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder")
     )
     (path "/e3f2e52e-4aea-4bbd-9288-ba525c96dd40"
-      (reference "J1") (unit 1) (value "Conn_02x10_Top_Bottom") (footprint "PrjLibrary_MainBoard:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom")
+      (reference "J1") (unit 1) (value "Conn_02x10_Top_Bottom") (footprint "ModifiedKiCadLibrary:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom")
     )
     (path "/40c32662-1f9d-4b29-a70d-1ec9da09c1f8"
       (reference "J2") (unit 1) (value "Conn_01x02") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
@@ -2269,10 +2269,10 @@
       (reference "R10") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder")
     )
     (path "/8ab2638e-b70a-45f4-98e8-0b79c51ab1a9"
-      (reference "SW1") (unit 1) (value "addr_high") (footprint "Button_Switch_THT:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm")
+      (reference "SW1") (unit 1) (value "addr_high") (footprint "ModifiedKiCadLibrary:SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm_3Dfixed")
     )
     (path "/9dc4d5c3-0aa7-40bf-8993-cc527f18c214"
-      (reference "U1") (unit 1) (value "27C512") (footprint "Package_DIP:DIP-28_W15.24mm")
+      (reference "U1") (unit 1) (value "27C512") (footprint "ModifiedKiCadLibrary:DIP-28_W15.24mm_D1mm")
     )
   )
 )

@@ -1,6 +1,6 @@
 (footprint "SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm_short" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 620FF1AD)
+  (tedit 622935E6)
   (descr "8x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x22.5mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf) (modified from KiCad 6 library)")
   (tags "DIP Switch SPST Slide 7.62mm 300mil")
   (attr through_hole)
@@ -304,8 +304,8 @@
   (pad "15" thru_hole oval (at 7.62 2.54) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) (tstamp 99762d26-3535-43f0-8dcf-17a708f54cc5))
   (pad "16" thru_hole oval (at 7.62 0) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask) (tstamp dabc225e-6738-4af5-b7bc-2ba2ec0b0c50))
   (model "${KICAD6_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_DIP_SPSTx08_Slide_9.78x22.5mm_W7.62mm_P2.54mm.wrl"
-    (offset (xyz 0 0 0))
+    (offset (xyz 7.62 -17.78 0))
     (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 90))
+    (rotate (xyz 0 0 -90))
   )
 )

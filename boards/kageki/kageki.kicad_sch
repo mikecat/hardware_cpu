@@ -779,7 +779,7 @@
       (reference "J1") (unit 1) (value "Conn_01x06") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
     )
     (path "/54212c01-b363-47b8-a145-45c40df316f4/98fac554-e694-479c-a41a-2d5451b79e52"
-      (reference "J2") (unit 1) (value "Conn_02x10_Top_Bottom") (footprint "PrjLibrary_CalicoCPU:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom")
+      (reference "J2") (unit 1) (value "Conn_02x10_Top_Bottom") (footprint "ModifiedKiCadLibrary:PinHeader_2x10_P2.54mm_Vertical_Top_Bottom")
     )
     (path "/54212c01-b363-47b8-a145-45c40df316f4/bb702799-04d1-4136-9913-db15d677cb7f"
       (reference "J3") (unit 1) (value "Conn_01x06") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
@@ -890,52 +890,52 @@
       (reference "SW1") (unit 1) (value "SW_DIP_x04") (footprint "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/edfccd7f-d524-4896-bec3-db71104d970d"
-      (reference "U1") (unit 1) (value "74HC161") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
+      (reference "U1") (unit 1) (value "74HC161") (footprint "ModifiedKiCadLibrary:DIP-16_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/d19ca699-addd-4426-af5f-88ae55dfc803"
-      (reference "U2") (unit 1) (value "74HC161") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
+      (reference "U2") (unit 1) (value "74HC161") (footprint "ModifiedKiCadLibrary:DIP-16_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/c3edbd7f-3ea8-48dc-90de-41717f35d963"
-      (reference "U3") (unit 1) (value "74HC161") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
+      (reference "U3") (unit 1) (value "74HC161") (footprint "ModifiedKiCadLibrary:DIP-16_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/cc06a8fd-d7db-479d-8cb3-a9fdf79c89a7"
-      (reference "U4") (unit 1) (value "74HC161") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
+      (reference "U4") (unit 1) (value "74HC161") (footprint "ModifiedKiCadLibrary:DIP-16_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/36fadf59-89b7-4f12-89ed-0931091853b4"
-      (reference "U5") (unit 1) (value "74HC74") (footprint "PrjLibrary_CalicoCPU:DIP-14_W7.62mm_D1mm")
+      (reference "U5") (unit 1) (value "74HC74") (footprint "ModifiedKiCadLibrary:DIP-14_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/82963987-a4eb-49d7-ad76-26756301f2ab"
-      (reference "U5") (unit 2) (value "74HC74") (footprint "PrjLibrary_CalicoCPU:DIP-14_W7.62mm_D1mm")
+      (reference "U5") (unit 2) (value "74HC74") (footprint "ModifiedKiCadLibrary:DIP-14_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/7204d54d-ca69-4daf-81c0-20e60aba73f3"
-      (reference "U5") (unit 3) (value "74HC74") (footprint "PrjLibrary_CalicoCPU:DIP-14_W7.62mm_D1mm")
+      (reference "U5") (unit 3) (value "74HC74") (footprint "ModifiedKiCadLibrary:DIP-14_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/7c075886-2969-4b4f-b345-3c1d29ba01ef"
-      (reference "U6") (unit 1) (value "74HC138") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
+      (reference "U6") (unit 1) (value "74HC138") (footprint "ModifiedKiCadLibrary:DIP-16_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/83673adb-4070-4f8c-aad9-06baa8d1e71a"
-      (reference "U7") (unit 1) (value "74HC00") (footprint "PrjLibrary_CalicoCPU:DIP-14_W7.62mm_D1mm")
+      (reference "U7") (unit 1) (value "74HC00") (footprint "ModifiedKiCadLibrary:DIP-14_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/f87767eb-a54b-4d5a-94fa-c7782535692a"
-      (reference "U7") (unit 2) (value "74HC00") (footprint "PrjLibrary_CalicoCPU:DIP-14_W7.62mm_D1mm")
+      (reference "U7") (unit 2) (value "74HC00") (footprint "ModifiedKiCadLibrary:DIP-14_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/9fce23a8-2e77-4035-9e39-836fee0c66e0"
-      (reference "U7") (unit 3) (value "74HC00") (footprint "PrjLibrary_CalicoCPU:DIP-14_W7.62mm_D1mm")
+      (reference "U7") (unit 3) (value "74HC00") (footprint "ModifiedKiCadLibrary:DIP-14_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/23e808f6-6a55-4bea-972b-a16b812ddb21"
-      (reference "U7") (unit 4) (value "74HC00") (footprint "PrjLibrary_CalicoCPU:DIP-14_W7.62mm_D1mm")
+      (reference "U7") (unit 4) (value "74HC00") (footprint "ModifiedKiCadLibrary:DIP-14_W7.62mm_D1mm")
     )
     (path "/b6df6e41-c376-419f-b59e-d3d46fbd9122/0af32b60-a848-43a6-ae63-d2d6355a8059"
-      (reference "U7") (unit 5) (value "74HC00") (footprint "PrjLibrary_CalicoCPU:DIP-14_W7.62mm_D1mm")
+      (reference "U7") (unit 5) (value "74HC00") (footprint "ModifiedKiCadLibrary:DIP-14_W7.62mm_D1mm")
     )
     (path "/b75026d7-74d7-409b-aacb-2ae63565f9b5/7af629e8-76b8-4b95-8f91-385da143ccaa"
-      (reference "U8") (unit 1) (value "74HC153") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
+      (reference "U8") (unit 1) (value "74HC153") (footprint "ModifiedKiCadLibrary:DIP-16_W7.62mm_D1mm")
     )
     (path "/b75026d7-74d7-409b-aacb-2ae63565f9b5/7593cf54-0835-4074-9d87-2a7613107ea6"
-      (reference "U9") (unit 1) (value "74HC153") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
+      (reference "U9") (unit 1) (value "74HC153") (footprint "ModifiedKiCadLibrary:DIP-16_W7.62mm_D1mm")
     )
     (path "/b75026d7-74d7-409b-aacb-2ae63565f9b5/1b0b95e4-448b-4128-a6a9-920a1396d56c"
-      (reference "U10") (unit 1) (value "74HC283") (footprint "PrjLibrary_CalicoCPU:DIP-16_W7.62mm_D1mm")
+      (reference "U10") (unit 1) (value "74HC283") (footprint "ModifiedKiCadLibrary:DIP-16_W7.62mm_D1mm")
     )
   )
 )
