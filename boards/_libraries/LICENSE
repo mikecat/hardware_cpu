@@ -1,0 +1,5 @@
+Files in the ModifiedKiCadLibrary.pretty/ directory are modified versions of the KiCad 6 library,
+which are licensed under the Creative Commons CC-BY-SA 4.0 License with some exception.
+https://www.kicad.org/libraries/license/
+
+The default license described in the top-level LICENSE file won't apply there.
