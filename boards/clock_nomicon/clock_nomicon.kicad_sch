@@ -1519,7 +1519,7 @@
     (pin "1" (uuid 6f221ebf-9f03-4a8c-9072-4f453c62a785))
   )
 
-  (symbol (lib_id "Switch:SW_SPDT_MSM") (at 76.2 35.56 0) (unit 1)
+  (symbol (lib_id "Switch:SW_SPDT_MSM") (at 76.2 35.56 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 5f8eab89-7177-4721-9b83-b4d91b8a0975)
     (property "Reference" "SW1" (id 0) (at 76.327 27.94 0))
