@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "ModifiedKiCadLibrary")(type "KiCad")(uri "${KIPRJMOD}/../_libraries/ModifiedKiCadLibrary.pretty")(options "")(descr ""))
+  (lib (name "MyLibrary")(type "KiCad")(uri "D:/MyData/Documents/cpu_zisaku/hardware_cpu/boards/_libraries/MyLibrary.pretty")(options "")(descr ""))
 )

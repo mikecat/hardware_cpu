@@ -1,0 +1,14 @@
+mikeneko.odg
+↓
+mikeneko_exported.png
+↓to_3colors.py
+mikeneko_3colors.png
+↓手動
+mikeneko_3colors_hosei.png
+↓手動
+mikeneko_3colors_hosei_brownonly.png
+↓KiCad 6 イメージ コンバーター
+mikeneko_3colors_hosei.kicad_mod
+mikeneko_3colors_hosei_brownonly.kicad_mod
+↓手動でマージ
+mikeneko.kicad_mod (MyLibrary)
