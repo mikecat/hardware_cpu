@@ -1,4 +1,4 @@
-CalicoCPU (Calculator IC organized CPU)
-=======================================
+ハードウェアCPU
+===============
 
-CPU作るよ！
+シミュレータやFPGAではなく、電子回路のCPUを作るよ！
