@@ -71,7 +71,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "../../../release/todo_tag_here/work/rom_write_shield/")
+      (outputdirectory "../../../../release/20220622-boards/_gerver_work/rom_write_shield-v1.1/")
     )
   )
 

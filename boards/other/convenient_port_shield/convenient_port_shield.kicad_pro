@@ -437,7 +437,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "../../../../release/20220527-boards-v1.0/work/convenient_port_shield-v1.0/",
+    "plot_directory": "../../../../release/20220622-boards/work/convenient_port_shield-v1.1/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
