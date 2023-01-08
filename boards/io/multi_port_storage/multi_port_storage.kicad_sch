@@ -723,7 +723,7 @@
   )
 
   (no_connect (at 195.58 118.11) (uuid d925907b-77d0-4864-acb8-fc442a68202c))
-  (no_connect (at 195.58 115.57) (uuid d925907b-77d0-4864-acb8-fc442a68202c))
+  (no_connect (at 195.58 115.57) (uuid d925907b-77d0-4864-acb8-fc442a68202d))
 
   (wire (pts (xy 207.01 125.73) (xy 207.01 128.27))
     (stroke (width 0) (type default) (color 0 0 0 0))
